@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+.table-title {
+  width: 300px;
+  font-size: 20px;
+  &__body {
+    width: 400px;
+  }
+}
+
+.table-body {
+  td {
+    text-align: left;
+  }
+  a {
+    padding: 0 10px;
+    color: #000000;
+  }
+}
+
+.form {
+  margin: 10px 0;
+  label {
+    display: block;
+  }
+}
+
+.wrapper {
+  display: flex;
+  h2 {
+    margin: 20px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 44px;
+  }
+  a {
+    padding: 0 10px;
+    color: #000000;
+  }
+}
+
+.flash-message {
+  color: #07c800;
+}
+
+.alert {
+  color:#262626; 
+  background:#FFEBE8;
+  text-align: center;
+  border:2px solid #990000;
+  padding:12px;
+  width: 500px;
+}
