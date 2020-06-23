@@ -24,7 +24,7 @@ class BooksController < ApplicationController
   end
   
   def update
-    @book.update(book_edit_params)
+    @book.update(book_params)
     redirect_to books_path
   end
   
