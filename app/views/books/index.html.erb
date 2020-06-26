@@ -3,7 +3,7 @@
   <thead>
     <tr>
       <th class="table-title">Title</th>
-      <th class="table-title__body">Body</th>
+      <th class="table-title__body">Opinion</th>
     </tr>
   </thead>
 
@@ -14,7 +14,7 @@
           <%= book.title %>
         </td>
         <td>
-          <%= book.body %>
+          <%= book.opinion%>
         </td>
         <td>
           <%= link_to "Show", book_path(book) %>
@@ -29,6 +29,23 @@
     <% end %>    
   </tbody>
 </table>
+
+<div class="col-xs-3"> 
+  <h2>User info</h2>
+  <table>
+    <tbody>
+      <tr>
+        <th>name</th>
+        <th><%= current_user.name %></th>
+      </tr>
+      <tr>
+        <th>introduction</th>
+        <th><%= current_user.introduction %></th>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 
 <%= form_with(model: @book, local: true) do |f| %>
@@ -48,8 +65,8 @@
     <%= f.text_field :title %>
   </div>
   <div class="form">
-    <label for="body">Body</label>
-    <%= f.text_area :body %>
+    <label for="opinion">Opinion</label>
+    <%= f.text_area :opinion %>
   </div>
   <div class="form">
     <%= f.submit "Create Book" %>

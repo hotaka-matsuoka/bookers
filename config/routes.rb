@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :top, only: :index 
+  root "books#index"
   resources :books
+  resources :users
 end

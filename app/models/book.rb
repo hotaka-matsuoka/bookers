@@ -1,3 +1,7 @@
 class Book < ApplicationRecord
-  validates :title, :body, presence: true
+
+  belongs_to :user
+
+  validates :title, :opinion, presence: true
+
 end
